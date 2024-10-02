@@ -1,12 +1,39 @@
 ---
-title: "About Me"
+title: "Shivesh Krishna"
+image: profile.jpg  
+about:
+  template: jolla
+  links:
+    - icon: mail
+      text: Email
+      href: mailto:spal0044@student.monash.edu
+    - icon: github
+      text: GitHub
+      href: https://github.com/shiveshkrishna
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/yourtwitterhandle  
+   
 ---
 
-Hi, I’m Shivesh Krishna, a data enthusiast passionate about using data to drive meaningful insights. Currently, I’m a student at Monash University, exploring data communication, analytics, and cricket strategy.
+
+Hi, I’m **Shivesh Krishna**, a data enthusiast passionate about using data to drive meaningful insights. Currently, I’m pursuing my studies at **Monash University**, specializing in **data communication, analytics**, and **cricket strategy**.
+
+I enjoy analyzing data in various fields, but my particular interest lies in applying analytics to **sports** (especially cricket) and **business intelligence**.
 
 ### Skills:
-- R, Python
-- Data Visualization
-- Statistical Analysis
+ **Programming**: R, Python
+ **Data Visualization**: ggplot2, matplotlib, Plotly
+ **Statistical Analysis**: Regression, Hypothesis Testing, Machine Learning
 
-[Get in Touch](contact.qmd)
+I love sharing insights with others and helping teams make data-driven decisions. Feel free to get in touch with me!
+
+### Contact Information:
+You can reach me through the following platforms:
+- **Email**: spal0044@student.monash.edu
+- **GitHub**: [shiveshkrishna](https://github.com/shiveshkrishna)
+- **Twitter**: [@yourtwitterhandle](https://twitter.com/yourtwitterhandle)
+
+
+---
+

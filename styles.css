@@ -1,4 +1,13 @@
-/* css styles */
+/* Navbar and Banner */
 .navbar-dark, .quarto-title-banner {
-  background-color: #006DAE;
+  background-color: #f7f7f7;
+}
+
+/* Headings and Links */
+h1, h2, h3, h4, a {
+  color: #006DAE;
+}
+
+a:hover {
+  color: #FF8C00;
 }
