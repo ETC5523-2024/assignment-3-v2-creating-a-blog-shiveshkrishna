@@ -1,8 +1,12 @@
 ---
 title: "Shivesh Krishna"
+description: "Data Enthusiast | Analytics Specialist | Cricket Strategy Aficionado"
+page-layout: full
 image: profile.jpg  
 about:
-  template: jolla
+  template: solana
+  image-shape: round
+  image-width: 20em
   links:
     - icon: mail
       text: Email
@@ -13,27 +17,27 @@ about:
     - icon: twitter
       text: Twitter
       href: https://twitter.com/yourtwitterhandle  
-   
 ---
 
+I’m a data enthusiast passionate about leveraging data to uncover meaningful insights and drive informed decision-making. Currently, I am studying at Monash University, focusing on data communication, advanced analytics, and cricket strategy.
 
-Hi, I’m **Shivesh Krishna**, a data enthusiast passionate about using data to drive meaningful insights. Currently, I’m pursuing my studies at **Monash University**, specializing in **data communication, analytics**, and **cricket strategy**.
+My key interests lie in using data to enhance decision-making in sports (especially cricket) and business intelligence.
 
-I enjoy analyzing data in various fields, but my particular interest lies in applying analytics to **sports** (especially cricket) and **business intelligence**.
+------------------------------------------------------------------------
 
-### Skills:
- **Programming**: R, Python
- **Data Visualization**: ggplot2, matplotlib, Plotly
- **Statistical Analysis**: Regression, Hypothesis Testing, Machine Learning
+### Skills 🚀
 
-I love sharing insights with others and helping teams make data-driven decisions. Feel free to get in touch with me!
+-   **Programming**: R, Python\
+-   **Data Visualization**: ggplot2, matplotlib, Plotly\
+-   **Statistical Analysis**: Regression, Hypothesis Testing, Machine Learning
 
-### Contact Information:
-You can reach me through the following platforms:
-- **Email**: spal0044@student.monash.edu
-- **GitHub**: [shiveshkrishna](https://github.com/shiveshkrishna)
-- **Twitter**: [@yourtwitterhandle](https://twitter.com/yourtwitterhandle)
+------------------------------------------------------------------------
 
+### Get in Touch 📬
 
----
+Feel free to reach out via the following platforms:\
+- **Email**: [spal0044\@student.monash.edu](mailto:spal0044@student.monash.edu)\
+- **GitHub**: [shiveshkrishna](https://github.com/shiveshkrishna)\
+- **Twitter**: [\@yourtwitterhandle](https://twitter.com/yourtwitterhandle)
 
+------------------------------------------------------------------------

@@ -9,12 +9,10 @@ website:
         href: index.qmd
       - text: "About"
         href: about.qmd
-    right:
       - icon: github
         href: https://github.com/shiveshkrishna
       - icon: twitter
         href: https://twitter.com/yourtwitterhandle
-
 format:
   html:
     theme: lumen

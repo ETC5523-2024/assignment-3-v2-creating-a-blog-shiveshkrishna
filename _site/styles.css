@@ -1,13 +1,42 @@
 /* Navbar and Banner */
 .navbar-dark, .quarto-title-banner {
-  background-color: #f7f7f7;
+  background-color: #006DAE;
+  color: #fff !important; /* Change text color to white for better contrast */
 }
 
 /* Headings and Links */
 h1, h2, h3, h4, a {
-  color: #006DAE;
+  color: #333; /* Use dark gray for headings and links to contrast with the background */
 }
 
 a:hover {
-  color: #FF8C00;
+  color: #333;
+}
+
+/* Navbar link colors */
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff !important; /* Set navbar links to white for better visibility */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #FF8C00 !important; /* Ensure hover state has sufficient contrast */
+}
+
+/* Ensure navbar-brand (logo or title) text is visible */
+.navbar-dark .navbar-brand {
+  color: #fff !important; /* Set navbar brand to white for better contrast */
+}
+
+/* Adjust banner text color */
+.quarto-title-banner .title {
+  color: #fff !important; /* Set title text to white for better contrast */
+}
+
+.quarto-title-banner .subtitle {
+  color: #fff !important; /* Set subtitle text to white for consistency */
+}
+
+/* Fix any buttons or icons */
+.navbar-dark .btn, .navbar-dark .icon {
+  color: #fff !important; /* Ensure buttons or icons are visible in white */
 }
