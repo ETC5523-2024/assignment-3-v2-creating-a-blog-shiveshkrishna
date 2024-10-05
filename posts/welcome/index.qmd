@@ -20,15 +20,6 @@ library(gt)
 # Load data
 ipl <- read.csv("data/IPL_Data_2022.csv")
 
-# Data manipulation for batting
-filtered_ipl <- ipl %>%
-  mutate(Surname = sub(".*\\s", "", Name)) %>%
-  filter(RunsScored > 3000)
-
-# Data manipulation for bowling
-bowlers_filtered <- ipl %>%
-  filter(Wickets > 90)
-
 # Create table for batsmen
 batsmen_data <- data.frame(
   Batsman = c("David Warner", "KL Rahul", "Kieron Pollard"),
@@ -65,13 +56,25 @@ The data for this analysis was sourced from the IPL 2022 player statistics datas
 
 Before diving into the analysis, the data was cleaned by ensuring all players had complete records of these key metrics. Players with over 3000 runs (for batsmen) or more than 90 wickets (for bowlers) were included for a deeper analysis, allowing for a more accurate evaluation of top performers.
 
+```{r}
+# Data manipulation for batting
+filtered_ipl <- ipl %>%
+  mutate(Surname = sub(".*\\s", "", Name)) %>%
+  filter(RunsScored > 3000)
+
+# Data manipulation for bowling
+bowlers_filtered <- ipl %>%
+  filter(Wickets > 90)
+```
+
+
 #### **Analysis**
 
-The analysis highlights two key performance areas: **batting** and **bowling**.
+The analysis highlights two key performance areas: **Batting** and **Bowling**.
 
 ##### **Batting Performance for Auction Strategy**
 
-The scatter plot below @fig-batting-plot showcases the relationship between a player's batting average and strike rate for players with over 3000 runs.
+The scatter plot below @fig-batting-plot and the table @tbl-batting-table showcases the relationship between a player's batting average and strike rate for players with over 3000 runs.
 
 ```{r echo=FALSE}
 #| label: fig-batting-plot
@@ -94,6 +97,9 @@ ggplot(filtered_ipl, aes(x = BattingAVG, y = BattingS.R, label = Surname)) +
 ```
 
 ```{r echo=FALSE}
+#| label: tbl-batting-table
+#| table-cap: Batting Average and Strike Rate for Batsmen with Over 3000 Runs
+
 # Display the batsmen table with enhanced styling using gt
 batsmen_data %>%
   gt() %>%
@@ -126,7 +132,7 @@ The larger the bubble, the more total runs a player has scored. This visualizati
 
 ##### **Bowling Performance for Auction Strategy**
 
-Similarly, bowling performance was analyzed based on the relationship between economy rate and bowling average for bowlers with over 90 wickets, shown in @fig-bowling-plot.
+Similarly, bowling performance was analyzed based on the relationship between economy rate and bowling average for bowlers with over 90 wickets, shown in @fig-bowling-plot and the table @tbl-bowling-table.
 
 ```{r echo=FALSE}
 #| label: fig-bowling-plot
@@ -149,7 +155,10 @@ ggplot(filtered_ipl, aes(x = BattingAVG, y = BattingS.R, label = Surname)) +
 ```
 
 ```{r echo=FALSE}
-# Display the bowlers table with enhanced styling using gt
+#| label: tbl-bowling-table
+#| table-cap: "Bowling Average and Economy Rate for Bowlers with Over 90 Wickets"
+
+#Display the bowlers table with enhanced styling using gt
 bowlers_data %>%
   gt() %>%
   tab_header(
