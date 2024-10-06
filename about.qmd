@@ -1,8 +1,8 @@
 ---
 title: "Shivesh Krishna"
-description: "Data Enthusiast | Analytics Specialist | Cricket Strategy Aficionado"
+description: "Master of Business Analytics | Data Enthusiast"
 page-layout: full
-image: profile.jpg  
+image: shivesh.jpg  
 about:
   template: solana
   image-shape: round
@@ -16,28 +16,20 @@ about:
       href: https://github.com/shiveshkrishna
     - icon: twitter
       text: Twitter
-      href: https://twitter.com/yourtwitterhandle  
+      href: https://twitter.com/shiveshkrishna 
 ---
 
-I’m a data enthusiast passionate about leveraging data to uncover meaningful insights and drive informed decision-making. Currently, I am studying at Monash University, focusing on data communication, advanced analytics, and cricket strategy.
+I’m currently pursuing a _Master of Business Analytics_ at _Monash University_, where I focus on developing expertise in _data analysis_, _machine learning_, and solving complex business challenges with _data-driven insights_.
 
-My key interests lie in using data to enhance decision-making in sports (especially cricket) and business intelligence.
+I’m always looking for new opportunities to collaborate on projects that leverage _data_ to drive informed decision-making across various industries.
 
-------------------------------------------------------------------------
+Recently, I worked on a project exploring how key performance metrics, such as _strike rates_ and _economy rates_, can be used to optimize _IPL auction strategies_, helping teams make _data-driven decisions_ for better performance.
 
-### Skills 🚀
+This website is where I share my projects and learning experiences. Feel free to connect with me through the links provided at the top to discuss potential collaborations or simply talk data.
 
--   **Programming**: R, Python\
--   **Data Visualization**: ggplot2, matplotlib, Plotly\
--   **Statistical Analysis**: Regression, Hypothesis Testing, Machine Learning
+## Education
 
-------------------------------------------------------------------------
-
-### Get in Touch 📬
-
-Feel free to reach out via the following platforms:\
-- **Email**: [spal0044\@student.monash.edu](mailto:spal0044@student.monash.edu)\
-- **GitHub**: [shiveshkrishna](https://github.com/shiveshkrishna)\
-- **Twitter**: [\@yourtwitterhandle](https://twitter.com/yourtwitterhandle)
-
-------------------------------------------------------------------------
+- **Master of Business Analytics**, _Monash University_  
+  
+- **Bachelor of Science in Business Management**, _Singapore Institute of Management_  
+  

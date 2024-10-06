@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Shivesh Krishna">
-<meta name="dcterms.date" content="2024-10-01">
+<meta name="dcterms.date" content="2024-10-06">
 
-<title>Shivesh Krishna - Data Insights Blog - Game-Changers: Optimizing IPL Auction Strategy through Key Performance Metrics</title>
+<title>Shivesh Krishna | Data-Driven Insights - Game-Changers: Optimizing IPL Auction Strategy through Key Performance Metrics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -74,7 +108,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Shivesh Krishna - Data Insights Blog</span>
+    <span class="navbar-title">Shivesh Krishna | Data-Driven Insights</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -84,12 +118,12 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html" rel="" target="">
+    <a class="nav-link" href="../../about.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html" rel="" target="">
- <span class="menu-text">About</span></a>
+    <a class="nav-link" href="../../index.html" rel="" target="">
+ <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/shiveshkrishna" rel="" target=""><i class="bi bi-github" role="img">
@@ -97,7 +131,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/yourtwitterhandle" rel="" target=""><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://twitter.com/shiveshkrishna" rel="" target=""><i class="bi bi-twitter" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
@@ -132,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">October 1, 2024</p>
+        <p class="date">October 6, 2024</p>
       </div>
     </div>
     
@@ -152,12 +186,13 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="ipl-auction-strategy-poster" class="level1">
 <h1><img src="ipl.jpg" class="img-fluid" alt="IPL Auction Strategy Poster"></h1>
-<section id="problem-description" class="level4">
-<h4 class="anchored" data-anchor-id="problem-description"><strong>Problem Description</strong></h4>
-<p>In the high-stakes environment of the Indian Premier League (IPL), selecting the right players during the auction can determine a team’s success. While traditional performance metrics like batting and bowling averages provide insight into a player’s consistency, they do not fully capture the fast-paced nature of T20 cricket. To optimize auction strategies, IPL teams must prioritize alternative metrics, such as strike rate for batsmen and economy rate for bowlers, to identify players who can make a game-changing impact.</p>
+<section id="cracking-the-code-what-makes-a-player-valuable-in-the-ipl" class="level4">
+<h4 class="anchored" data-anchor-id="cracking-the-code-what-makes-a-player-valuable-in-the-ipl"><strong>Cracking the Code: What Makes a Player Valuable in the IPL?</strong></h4>
+<p>In the high-stakes world of the Indian Premier League (IPL), a team’s success can hinge on the players chosen during the auction. Traditional performance metrics like batting and bowling averages may highlight a player’s consistency, but they fall short in reflecting the dynamic demands of T20 cricket. To truly optimize auction strategies, teams need to focus on alternative metrics—such as strike rate for batsmen and economy rate for bowlers—that capture a player’s potential to make a game-changing impact in this fast-paced format.</p>
+<p>In T20 cricket, where every ball counts, metrics like strike rate and economy rate provide a more accurate picture of a player’s ability to influence the outcome of a match. These statistics go beyond consistency and reflect a player’s efficiency in scoring quickly or restricting runs, which can make the critical difference between winning and losing in such a short format. By prioritizing these performance indicators, IPL teams can make smarter, data-driven decisions that align with the fast-paced nature of the game.</p>
 </section>
-<section id="data-description" class="level4">
-<h4 class="anchored" data-anchor-id="data-description"><strong>Data Description</strong></h4>
+<section id="understanding-the-data-behind-the-game" class="level4">
+<h4 class="anchored" data-anchor-id="understanding-the-data-behind-the-game"><strong>Understanding the Data Behind the Game</strong></h4>
 <p>The data for this analysis was sourced from the IPL 2022 player statistics dataset available on <a href="https://www.kaggle.com/datasets/vora1011/ipl-2022-player-statistics">Kaggle</a>. This dataset includes player performance metrics such as runs scored, wickets taken, strike rates, economy rates, and averages accumulated over multiple IPL seasons. Key variables analyzed include:</p>
 <ul>
 <li><p><strong>Batting Average</strong>: The average number of runs scored per innings.</p></li>
@@ -166,13 +201,23 @@ ul.task-list li input[type="checkbox"] {
 <li><p><strong>Economy Rate</strong>: The average number of runs conceded per over.</p></li>
 </ul>
 <p>Before diving into the analysis, the data was cleaned by ensuring all players had complete records of these key metrics. Players with over 3000 runs (for batsmen) or more than 90 wickets (for bowlers) were included for a deeper analysis, allowing for a more accurate evaluation of top performers.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Data manipulation for batting</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>filtered_ipl <span class="ot">&lt;-</span> ipl <span class="sc">%&gt;%</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Surname =</span> <span class="fu">sub</span>(<span class="st">".*</span><span class="sc">\\</span><span class="st">s"</span>, <span class="st">""</span>, Name)) <span class="sc">%&gt;%</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(RunsScored <span class="sc">&gt;</span> <span class="dv">3000</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Data manipulation for bowling</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>bowlers_filtered <span class="ot">&lt;-</span> ipl <span class="sc">%&gt;%</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Wickets <span class="sc">&gt;</span> <span class="dv">90</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
-<section id="analysis" class="level4">
-<h4 class="anchored" data-anchor-id="analysis"><strong>Analysis</strong></h4>
+<section id="key-insights-from-performance-metrics" class="level4">
+<h4 class="anchored" data-anchor-id="key-insights-from-performance-metrics"><strong>Key Insights from Performance Metrics</strong></h4>
 <p>The analysis highlights two key performance areas: <strong>Batting</strong> and <strong>Bowling</strong>.</p>
 <section id="batting-performance-for-auction-strategy" class="level5">
 <h5 class="anchored" data-anchor-id="batting-performance-for-auction-strategy"><strong>Batting Performance for Auction Strategy</strong></h5>
-<p>The scatter plot below <a href="#fig-batting-plot">Figure&nbsp;1</a> and the table <strong>?@tbl-batting-table</strong> showcases the relationship between a player’s batting average and strike rate for players with over 3000 runs.</p>
+<p>The scatter plot below <a href="#fig-batting-plot">Figure&nbsp;1</a> showcases the relationship between a player’s batting average and strike rate for players with over 3000 runs.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div id="fig-batting-plot" class="quarto-figure quarto-figure-center anchored">
@@ -183,30 +228,28 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<div id="tbl-batting-table" class="cell tbl-parent quarto-layout-panel anchored" data-table-cap="Batting Average and Strike Rate for Batsmen with Over 3000 Runs">
-<div class="panel-caption table-caption">
-<p><strong>?(caption)</strong></p>
-</div>
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="cell-output-display quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<p>The table below <a href="#tbl-batting-table">Table&nbsp;1</a> highlights the top-performing batsmen with over 3000 runs, showing their strike rate and batting average.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-batting-table" class="anchored">
 
-<div id="ubzurtxqzj" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#ubzurtxqzj table {
+<div id="vigzvvesep" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#vigzvvesep table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#ubzurtxqzj thead, #ubzurtxqzj tbody, #ubzurtxqzj tfoot, #ubzurtxqzj tr, #ubzurtxqzj td, #ubzurtxqzj th {
+#vigzvvesep thead, #vigzvvesep tbody, #vigzvvesep tfoot, #vigzvvesep tr, #vigzvvesep td, #vigzvvesep th {
   border-style: none;
 }
 
-#ubzurtxqzj p {
+#vigzvvesep p {
   margin: 0;
   padding: 0;
 }
 
-#ubzurtxqzj .gt_table {
+#vigzvvesep .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -232,12 +275,12 @@ ul.task-list li input[type="checkbox"] {
   border-left-color: #D3D3D3;
 }
 
-#ubzurtxqzj .gt_caption {
+#vigzvvesep .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#ubzurtxqzj .gt_title {
+#vigzvvesep .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -249,7 +292,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-width: 0;
 }
 
-#ubzurtxqzj .gt_subtitle {
+#vigzvvesep .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -261,7 +304,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-width: 0;
 }
 
-#ubzurtxqzj .gt_heading {
+#vigzvvesep .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -273,13 +316,13 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#ubzurtxqzj .gt_bottom_border {
+#vigzvvesep .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ubzurtxqzj .gt_col_headings {
+#vigzvvesep .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -294,7 +337,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#ubzurtxqzj .gt_col_heading {
+#vigzvvesep .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -314,7 +357,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#ubzurtxqzj .gt_column_spanner_outer {
+#vigzvvesep .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -326,15 +369,15 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 4px;
 }
 
-#ubzurtxqzj .gt_column_spanner_outer:first-child {
+#vigzvvesep .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ubzurtxqzj .gt_column_spanner_outer:last-child {
+#vigzvvesep .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ubzurtxqzj .gt_column_spanner {
+#vigzvvesep .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -346,11 +389,11 @@ ul.task-list li input[type="checkbox"] {
   width: 100%;
 }
 
-#ubzurtxqzj .gt_spanner_row {
+#vigzvvesep .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#ubzurtxqzj .gt_group_heading {
+#vigzvvesep .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -376,7 +419,7 @@ ul.task-list li input[type="checkbox"] {
   text-align: left;
 }
 
-#ubzurtxqzj .gt_empty_group_heading {
+#vigzvvesep .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -391,15 +434,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 
-#ubzurtxqzj .gt_from_md > :first-child {
+#vigzvvesep .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ubzurtxqzj .gt_from_md > :last-child {
+#vigzvvesep .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ubzurtxqzj .gt_row {
+#vigzvvesep .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -418,7 +461,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#ubzurtxqzj .gt_stub {
+#vigzvvesep .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -431,7 +474,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#ubzurtxqzj .gt_stub_row_group {
+#vigzvvesep .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -445,15 +488,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: top;
 }
 
-#ubzurtxqzj .gt_row_group_first td {
+#vigzvvesep .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ubzurtxqzj .gt_row_group_first th {
+#vigzvvesep .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#ubzurtxqzj .gt_summary_row {
+#vigzvvesep .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -463,16 +506,16 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#ubzurtxqzj .gt_first_summary_row {
+#vigzvvesep .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ubzurtxqzj .gt_first_summary_row.thick {
+#vigzvvesep .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ubzurtxqzj .gt_last_summary_row {
+#vigzvvesep .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -482,7 +525,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#ubzurtxqzj .gt_grand_summary_row {
+#vigzvvesep .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -492,7 +535,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#ubzurtxqzj .gt_first_grand_summary_row {
+#vigzvvesep .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -502,7 +545,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-color: #D3D3D3;
 }
 
-#ubzurtxqzj .gt_last_grand_summary_row_top {
+#vigzvvesep .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -512,11 +555,11 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#ubzurtxqzj .gt_striped {
+#vigzvvesep .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ubzurtxqzj .gt_table_body {
+#vigzvvesep .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -525,7 +568,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#ubzurtxqzj .gt_footnotes {
+#vigzvvesep .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -539,7 +582,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#ubzurtxqzj .gt_footnote {
+#vigzvvesep .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -548,7 +591,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#ubzurtxqzj .gt_sourcenotes {
+#vigzvvesep .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -562,7 +605,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#ubzurtxqzj .gt_sourcenote {
+#vigzvvesep .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -570,76 +613,76 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#ubzurtxqzj .gt_left {
+#vigzvvesep .gt_left {
   text-align: left;
 }
 
-#ubzurtxqzj .gt_center {
+#vigzvvesep .gt_center {
   text-align: center;
 }
 
-#ubzurtxqzj .gt_right {
+#vigzvvesep .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ubzurtxqzj .gt_font_normal {
+#vigzvvesep .gt_font_normal {
   font-weight: normal;
 }
 
-#ubzurtxqzj .gt_font_bold {
+#vigzvvesep .gt_font_bold {
   font-weight: bold;
 }
 
-#ubzurtxqzj .gt_font_italic {
+#vigzvvesep .gt_font_italic {
   font-style: italic;
 }
 
-#ubzurtxqzj .gt_super {
+#vigzvvesep .gt_super {
   font-size: 65%;
 }
 
-#ubzurtxqzj .gt_footnote_marks {
+#vigzvvesep .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#ubzurtxqzj .gt_asterisk {
+#vigzvvesep .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ubzurtxqzj .gt_indent_1 {
+#vigzvvesep .gt_indent_1 {
   text-indent: 5px;
 }
 
-#ubzurtxqzj .gt_indent_2 {
+#vigzvvesep .gt_indent_2 {
   text-indent: 10px;
 }
 
-#ubzurtxqzj .gt_indent_3 {
+#vigzvvesep .gt_indent_3 {
   text-indent: 15px;
 }
 
-#ubzurtxqzj .gt_indent_4 {
+#vigzvvesep .gt_indent_4 {
   text-indent: 20px;
 }
 
-#ubzurtxqzj .gt_indent_5 {
+#vigzvvesep .gt_indent_5 {
   text-indent: 25px;
 }
 
-#ubzurtxqzj .katex-display {
+#vigzvvesep .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#ubzurtxqzj div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#vigzvvesep div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
-<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false"><caption>Table&nbsp;1:  <p>Batting Average and Strike Rate for top performing batters</p> </caption>
   <thead>
     <tr class="gt_heading">
       <td colspan="4" class="gt_heading gt_title gt_font_normal gt_bottom_border" style="">Top Performing Batsmen</td>
@@ -682,7 +725,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="bowling-performance-for-auction-strategy" class="level5">
 <h5 class="anchored" data-anchor-id="bowling-performance-for-auction-strategy"><strong>Bowling Performance for Auction Strategy</strong></h5>
-<p>Similarly, bowling performance was analyzed based on the relationship between economy rate and bowling average for bowlers with over 90 wickets, shown in <a href="#fig-bowling-plot">Figure&nbsp;2</a> and the table <strong>?@tbl-bowling-table</strong>.</p>
+<p>Similarly, bowling performance was analyzed based on the relationship between economy rate and bowling average for bowlers with over 90 wickets, shown in <a href="#fig-bowling-plot">Figure&nbsp;2</a>.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div id="fig-bowling-plot" class="quarto-figure quarto-figure-center anchored">
@@ -693,30 +736,28 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<div id="tbl-bowling-table" class="cell tbl-parent quarto-layout-panel anchored" data-table-cap="Bowling Average and Economy Rate for Bowlers with Over 90 Wickets">
-<div class="panel-caption table-caption">
-<p><strong>?(caption)</strong></p>
-</div>
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="cell-output-display quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<p>The table below <a href="#tbl-bowling-table">Table&nbsp;2</a> highlights the top-performing bowlers with over 90 wickets, showing their economy rate and bowling average.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-bowling-table" class="anchored">
 
-<div id="bxczcmznuf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#bxczcmznuf table {
+<div id="tccyviuogd" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#tccyviuogd table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#bxczcmznuf thead, #bxczcmznuf tbody, #bxczcmznuf tfoot, #bxczcmznuf tr, #bxczcmznuf td, #bxczcmznuf th {
+#tccyviuogd thead, #tccyviuogd tbody, #tccyviuogd tfoot, #tccyviuogd tr, #tccyviuogd td, #tccyviuogd th {
   border-style: none;
 }
 
-#bxczcmznuf p {
+#tccyviuogd p {
   margin: 0;
   padding: 0;
 }
 
-#bxczcmznuf .gt_table {
+#tccyviuogd .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -742,12 +783,12 @@ ul.task-list li input[type="checkbox"] {
   border-left-color: #D3D3D3;
 }
 
-#bxczcmznuf .gt_caption {
+#tccyviuogd .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#bxczcmznuf .gt_title {
+#tccyviuogd .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -759,7 +800,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-width: 0;
 }
 
-#bxczcmznuf .gt_subtitle {
+#tccyviuogd .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -771,7 +812,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-width: 0;
 }
 
-#bxczcmznuf .gt_heading {
+#tccyviuogd .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -783,13 +824,13 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#bxczcmznuf .gt_bottom_border {
+#tccyviuogd .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#bxczcmznuf .gt_col_headings {
+#tccyviuogd .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -804,7 +845,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#bxczcmznuf .gt_col_heading {
+#tccyviuogd .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -824,7 +865,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#bxczcmznuf .gt_column_spanner_outer {
+#tccyviuogd .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -836,15 +877,15 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 4px;
 }
 
-#bxczcmznuf .gt_column_spanner_outer:first-child {
+#tccyviuogd .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#bxczcmznuf .gt_column_spanner_outer:last-child {
+#tccyviuogd .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#bxczcmznuf .gt_column_spanner {
+#tccyviuogd .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -856,11 +897,11 @@ ul.task-list li input[type="checkbox"] {
   width: 100%;
 }
 
-#bxczcmznuf .gt_spanner_row {
+#tccyviuogd .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#bxczcmznuf .gt_group_heading {
+#tccyviuogd .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -886,7 +927,7 @@ ul.task-list li input[type="checkbox"] {
   text-align: left;
 }
 
-#bxczcmznuf .gt_empty_group_heading {
+#tccyviuogd .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -901,15 +942,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 
-#bxczcmznuf .gt_from_md > :first-child {
+#tccyviuogd .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#bxczcmznuf .gt_from_md > :last-child {
+#tccyviuogd .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#bxczcmznuf .gt_row {
+#tccyviuogd .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -928,7 +969,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#bxczcmznuf .gt_stub {
+#tccyviuogd .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -941,7 +982,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#bxczcmznuf .gt_stub_row_group {
+#tccyviuogd .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -955,15 +996,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: top;
 }
 
-#bxczcmznuf .gt_row_group_first td {
+#tccyviuogd .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#bxczcmznuf .gt_row_group_first th {
+#tccyviuogd .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#bxczcmznuf .gt_summary_row {
+#tccyviuogd .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -973,16 +1014,16 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#bxczcmznuf .gt_first_summary_row {
+#tccyviuogd .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#bxczcmznuf .gt_first_summary_row.thick {
+#tccyviuogd .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#bxczcmznuf .gt_last_summary_row {
+#tccyviuogd .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -992,7 +1033,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#bxczcmznuf .gt_grand_summary_row {
+#tccyviuogd .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1002,7 +1043,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#bxczcmznuf .gt_first_grand_summary_row {
+#tccyviuogd .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1012,7 +1053,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-color: #D3D3D3;
 }
 
-#bxczcmznuf .gt_last_grand_summary_row_top {
+#tccyviuogd .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1022,11 +1063,11 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#bxczcmznuf .gt_striped {
+#tccyviuogd .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#bxczcmznuf .gt_table_body {
+#tccyviuogd .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1035,7 +1076,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#bxczcmznuf .gt_footnotes {
+#tccyviuogd .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1049,7 +1090,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#bxczcmznuf .gt_footnote {
+#tccyviuogd .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1058,7 +1099,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#bxczcmznuf .gt_sourcenotes {
+#tccyviuogd .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1072,7 +1113,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#bxczcmznuf .gt_sourcenote {
+#tccyviuogd .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1080,76 +1121,76 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#bxczcmznuf .gt_left {
+#tccyviuogd .gt_left {
   text-align: left;
 }
 
-#bxczcmznuf .gt_center {
+#tccyviuogd .gt_center {
   text-align: center;
 }
 
-#bxczcmznuf .gt_right {
+#tccyviuogd .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#bxczcmznuf .gt_font_normal {
+#tccyviuogd .gt_font_normal {
   font-weight: normal;
 }
 
-#bxczcmznuf .gt_font_bold {
+#tccyviuogd .gt_font_bold {
   font-weight: bold;
 }
 
-#bxczcmznuf .gt_font_italic {
+#tccyviuogd .gt_font_italic {
   font-style: italic;
 }
 
-#bxczcmznuf .gt_super {
+#tccyviuogd .gt_super {
   font-size: 65%;
 }
 
-#bxczcmznuf .gt_footnote_marks {
+#tccyviuogd .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#bxczcmznuf .gt_asterisk {
+#tccyviuogd .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#bxczcmznuf .gt_indent_1 {
+#tccyviuogd .gt_indent_1 {
   text-indent: 5px;
 }
 
-#bxczcmznuf .gt_indent_2 {
+#tccyviuogd .gt_indent_2 {
   text-indent: 10px;
 }
 
-#bxczcmznuf .gt_indent_3 {
+#tccyviuogd .gt_indent_3 {
   text-indent: 15px;
 }
 
-#bxczcmznuf .gt_indent_4 {
+#tccyviuogd .gt_indent_4 {
   text-indent: 20px;
 }
 
-#bxczcmznuf .gt_indent_5 {
+#tccyviuogd .gt_indent_5 {
   text-indent: 25px;
 }
 
-#bxczcmznuf .katex-display {
+#tccyviuogd .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#bxczcmznuf div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#tccyviuogd div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
-<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false"><caption>Table&nbsp;2:  <p>Bowling Average and Economy Rate for top performing bowlers</p> </caption>
   <thead>
     <tr class="gt_heading">
       <td colspan="4" class="gt_heading gt_title gt_font_normal gt_bottom_border" style="">Top Performing Bowlers</td>
@@ -1190,13 +1231,13 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 </section>
-<section id="conclusion" class="level4">
-<h4 class="anchored" data-anchor-id="conclusion"><strong>Conclusion</strong></h4>
+<section id="what-this-means-for-ipl-teams" class="level4">
+<h4 class="anchored" data-anchor-id="what-this-means-for-ipl-teams"><strong>What This Means for IPL Teams</strong></h4>
 <p>This analysis demonstrates that IPL teams can optimize their auction strategies by prioritizing strike rates and economy rates over traditional averages. Players like <strong>David Warner</strong> and <strong>KL Rahul</strong> exemplify the balance between consistency and impact, making them top picks. On the bowling side, <strong>Rashid Khan</strong> and <strong>Jasprit Bumrah</strong> are standout performers, thanks to their ability to control the game’s pace with low economy rates and frequent wickets.</p>
 <p>By focusing on metrics that reflect the fast-paced nature of T20 cricket, teams can make informed decisions, selecting players who are not only consistent but capable of turning the tide in crucial moments. This approach aligns with insights from analysts like Harsha Bhogle, who emphasized the importance of strike rates in T20 cricket.</p>
 </section>
-<section id="academic-reference" class="level3">
-<h3 class="anchored" data-anchor-id="academic-reference">Academic Reference</h3>
+<section id="reference" class="level4">
+<h4 class="anchored" data-anchor-id="reference"><strong>Reference</strong></h4>
 <p>Bhogle, H. (2019, April 8). Strike-Rate Is More Important than Average in T20 Format. <em>The Times of India</em>. Retrieved from <a href="https://timesofindia.indiatimes.com/sports/cricket/ipl/top-stories/strike-rate-is-more-important-than-average-in-t20-format-harsha-bhogle/articleshow/68774664.cms">https://timesofindia.indiatimes.com</a></p>
 
 

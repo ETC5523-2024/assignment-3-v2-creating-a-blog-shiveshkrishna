@@ -2,17 +2,17 @@ project:
   type: website
 
 website:
-  title: "Shivesh Krishna - Data Insights Blog"
+  title: "Shivesh Krishna | Data-Driven Insights"
   navbar:
     left:
       - text: "Home"
-        href: index.qmd
-      - text: "About"
         href: about.qmd
+      - text: "Blog"
+        href: index.qmd
       - icon: github
         href: https://github.com/shiveshkrishna
       - icon: twitter
-        href: https://twitter.com/yourtwitterhandle
+        href: https://twitter.com/shiveshkrishna
 format:
   html:
     theme: lumen
